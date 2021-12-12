@@ -1,4 +1,4 @@
-project (RunTakar)
+project (RunFooBar)
 
 find_package (OpenGL REQUIRED)
 include_directories (${OPENGL_INCLUDE_DIRS})
@@ -18,7 +18,7 @@ set_property (
 
 # Get the Engine include directories
 get_target_property (
-    MAIN_LIBRARY_INCLUDES TakarEngine
+    MAIN_LIBRARY_INCLUDES FooBarEngine
     INCLUDE_DIRECTORIES
     )
 
@@ -29,5 +29,5 @@ target_include_directories (
     PUBLIC ${MAIN_LIBRARY_INCLUDES}
     )
 
-target_link_libraries (RunTakar TakarEngine)
-target_link_libraries (RunTakar glfw)
+target_link_libraries (RunFooBar FooBarEngine)
+target_link_libraries (RunFooBar glfw)

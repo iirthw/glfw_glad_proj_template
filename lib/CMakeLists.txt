@@ -1,4 +1,4 @@
-project (TakarEngine)
+project (FooBarEngine)
 
 # -----------------------------------------------------------------------------
 
@@ -14,10 +14,10 @@ set (SOURCE_FILES ${HEADER_FILES} ${IMPL_FILES} ${THIRD_PARTY_IMPL_FILES})
 
 # -----------------------------------------------------------------------------
 
-add_library (TakarEngine STATIC ${SOURCE_FILES})
+add_library (FooBarEngine STATIC ${SOURCE_FILES})
 
 target_include_directories (
-    TakarEngine 
+  	FooBarEngine 
     PUBLIC 
     ${CMAKE_CURRENT_SOURCE_DIR}/public
     # Third-party include directories

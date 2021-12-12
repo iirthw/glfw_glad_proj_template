@@ -8,7 +8,7 @@ add_executable (${PROJECT_NAME} main.cc ${SOURCE_FILES})
 
 # Get the Engine include directories
 get_target_property (
-    MAIN_LIBRARY_INCLUDES TakarEngine
+    MAIN_LIBRARY_INCLUDES FooBarEngine
     INCLUDE_DIRECTORIES
     )
 
